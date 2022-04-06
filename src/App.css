@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  background-color: rgb(169, 250, 250);
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+
+.done{
+  background-color: rgb(84, 252, 252);
+  margin: 3%;
+  border-radius: 10%;
+  font-weight: 900;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.remove{
+  background-color: rgb(250, 128, 128);
+  margin: 3%;
+  border-radius: 10%;
+}
+
+.todo-items{
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  background-color: rgb(214, 244, 255);
+  border-color: rgb(243, 85, 85);
+  border-style: solid;
+  padding: 5%;
+  color: rgb(2, 59, 37);
+  margin: 3%;
+  border-radius: 5%;
+}
+
+#list-todo{
+  margin: 0;
+  padding: 0;
+  
+
+}
+
+#done-list{
+  margin: 0;
+  padding: 0;
+
+}
+
+.done-items{
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: rgb(214, 244, 255);
+  border-color: rgb(0, 255, 13);
+  border-style: solid;
+  padding: 5%;
+  margin: 2%;  
+  border-radius: 5%;
+}
+
+.text-todo-done{
+  text-decoration: line-through;
+  font-weight: 900;
+}
+
+.text-todo{
+  font-weight: 900;
+}
+
+#add-todo{
+  padding-top: 10%;
+  display: flex;
+
+}
+
+#addToDoButton{
+  background-color: rgb(25, 228, 255);
+  border-radius: 10%;
+  margin-left: 4%;
+}
+
+#nuevo-to-do{
+  text-align: center;
+  background-color: aqua;
+  border-radius: 8%;
+  font-weight: 800;
+
+}
+
+h1{
+  text-align: center;
+  background-color:rgb(221, 160, 160);
+  border-radius: 60%;
+}
+h2{
+  text-align: center;
+  background-color: rgb(89, 255, 200);
+  border-radius: 60%;
 }
